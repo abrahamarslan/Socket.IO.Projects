@@ -18,4 +18,8 @@ io.on('connection', (socket) => {
    socket.on('pong', (latency) => {
        console.log('Server: Pong to client | Latency: ', latency);
    });
+   socket.on('post-message', (message) => {
+       console.log(message);
+       io.emit('new-message', {message})
+   })
 });
