@@ -22,4 +22,12 @@ io.on('connection', (socket) => {
        console.log(message);
        io.emit('new-message', {message})
    })
+
+    socket.join('Room-One');
+    socket.to('Room-One').emit('joined', `${socket.id} has joined the Room-One`);
+});
+
+io.of('/admin').on('connection', (socket) => {
+    console.log('someone connected to the admin namespace');
+    io.of('/admin').emit('welcome', 'Welcome to the admin channel.');
 });

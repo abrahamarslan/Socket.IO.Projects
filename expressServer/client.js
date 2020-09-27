@@ -1,4 +1,5 @@
 const socket = io('http://localhost:9000');
+const socketAdmin = io('http://localhost:9000/admin');
 console.log(socket);
 //Send message when the client establishes the connection with the server
 socket.on('connect', (data) => {
@@ -16,6 +17,11 @@ socket.on('connect', (data) => {
         socket.emit('post-message', {message, id: socket.id});
         btn.value = '';
     });
+
+    socket.on('joined', (data) => {
+        console.log(data);
+    });
+
     socket.on('new-message', (data) => {
         const message = data.message;
         const chatClass = (message.id === socket.id ? 'right' : 'left');
@@ -33,5 +39,11 @@ socket.on('connect', (data) => {
                                 </p>
                             </div>
                         </li>`;
+    });
+
+});
+socketAdmin.on('connect', (data) => {
+    socketAdmin.on('welcome', (data) => {
+        console.log(data);
     });
 });

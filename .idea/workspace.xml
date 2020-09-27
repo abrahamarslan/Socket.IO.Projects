@@ -22,7 +22,6 @@
     <list default="true" id="98d109f3-2c92-41be-842d-a8dc926f1f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expressServer/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/expressServer/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressServer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/expressServer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expressServer/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/expressServer/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +73,7 @@
       <workItem from="1600807550012" duration="4751000" />
       <workItem from="1600841377232" duration="2611000" />
       <workItem from="1601186823445" duration="5125000" />
+      <workItem from="1601207194597" duration="2020000" />
     </task>
     <servers />
   </component>
