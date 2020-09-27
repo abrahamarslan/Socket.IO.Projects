@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98d109f3-2c92-41be-842d-a8dc926f1f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressServer/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/expressServer/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressServer/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/expressServer/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +32,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,6 +53,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -73,7 +73,7 @@
       <workItem from="1600807550012" duration="4751000" />
       <workItem from="1600841377232" duration="2611000" />
       <workItem from="1601186823445" duration="5125000" />
-      <workItem from="1601207194597" duration="2020000" />
+      <workItem from="1601207194597" duration="2911000" />
     </task>
     <servers />
   </component>
