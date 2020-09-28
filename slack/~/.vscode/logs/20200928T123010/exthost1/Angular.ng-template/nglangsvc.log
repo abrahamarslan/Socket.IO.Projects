@@ -1,0 +1,17 @@
+Info 0    [12:30:41.518] Format host information updated
+Info 1    [12:30:41.519] reload projects.
+Info 2    [12:30:41.519] Before ensureProjectForOpenFiles:
+Info 3    [12:30:41.519] After ensureProjectForOpenFiles:
+Info 4    [12:30:41.519] Host file extension mappings updated
+Info 5    [12:30:44.348] Search path: /root/.vscode/extensions/eamodio.gitlens-10.2.2/dist/webviews
+Info 6    [12:30:44.349] For info: /root/.vscode/extensions/eamodio.gitlens-10.2.2/dist/webviews/welcome.html :: No config files found.
+Info 7    [12:30:44.350] Loading global plugin @angular/language-service
+Info 8    [12:30:44.350] Enabling plugin @angular/language-service from candidate paths: /root/.vscode/extensions/angular.ng-template-0.1000.8/server/node_modules/@angular/language-service/bundles/language-service.js,/root/.vscode/extensions/angular.ng-template-0.1000.8/node_modules/typescript/lib/tsserverlibrary.js/../../..
+Info 9    [12:30:44.351] Loading @angular/language-service from /root/.vscode/extensions/angular.ng-template-0.1000.8/server/node_modules/@angular/language-service/bundles/language-service.js (resolved to /root/.vscode/extensions/angular.ng-template-0.1000.8/server/node_modules/@angular/language-service/bundles/language-service.js/node_modules)
+Info 10   [12:30:44.944] Plugin validation succeded
+Info 11   [12:30:44.970] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 12   [12:30:47.642] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 2671ms
+Info 13   [12:30:47.642] Project '/dev/null/inferredProject1*' (Inferred)
+Info 14   [12:30:47.642] 	Files (6)
+
+Info 15   [12:30:47.642] -----------------------------------------------
