@@ -45,3 +45,25 @@
     at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
 [2020-09-29 18:42:27.647] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
     at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:47:27.648] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:52:27.667] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:57:27.669] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:57:39.822] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:02:27.669] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:07:27.670] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:12:27.671] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:17:27.672] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:22:27.675] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:27:27.677] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 19:32:27.679] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
