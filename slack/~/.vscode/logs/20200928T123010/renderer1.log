@@ -1,1 +1,0 @@
-[2020-09-28 12:30:27.900] [renderer1] [warning] UNRESPONSIVE extension host, 'Wscats.eno' took 72% of 5584.048ms, saved PROFILE here: '/tmp/exthost-cfe2d3.cpuprofile' [{"id":"gc","total":16910,"percentage":0},{"id":"ritwickdey.LiveServer","total":1532200,"percentage":27},{"id":"self","total":33316,"percentage":1},{"id":"Wscats.eno","total":4001286,"percentage":72}]
