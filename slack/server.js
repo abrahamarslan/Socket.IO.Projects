@@ -24,5 +24,30 @@ namespaces.forEach((namespace) => {
     io.of(namespace.endpoint).on('connection', (nsSocket) => {
         console.log(`${nsSocket.id} has joined ${namespace.endpoint}`);
         nsSocket.emit('nsRoomLoad', namespaces[0].rooms);
+        nsSocket.on('joinRoom', (roomToJoin, memberCountCallbackFunc) => {
+            nsSocket.join(roomToJoin);
+            io.of('/wiki').in(roomToJoin).clients((error, clients) => {
+                memberCountCallbackFunc(clients.length);
+            })
+        });
+        nsSocket.on('newMessageToServer', (message) => {            
+            const data = {
+                text: message,
+                time: Date.now(),
+                username: "abraham",
+                avatar: "https://source.unsplash.com/random/30x30"
+            }            
+            console.log(message);
+            console.log(nsSocket.rooms);
+            // To find which room this socket is from and which room emitted this newMessageToServer 
+            // The user will be in the 2nd room in the object list
+            // This is because the socket always joins its own room on connection or re-connection
+            // Get the keys
+            const roomTitle = Object.keys(nsSocket.rooms)[1];
+            // Now broadcast this message from client to all clients of this room
+            io.of('/wiki').to(roomTitle).emit('messageToClients', data);
+
+            
+        })
     });
 });

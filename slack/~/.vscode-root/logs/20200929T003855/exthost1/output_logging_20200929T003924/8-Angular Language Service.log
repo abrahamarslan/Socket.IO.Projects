@@ -4,3 +4,6 @@
 [Info  - 12:39:24 AM] Log file: /var/www/socket/server/slack/~/.vscode-root/logs/20200929T003855/exthost1/Angular.ng-template/nglangsvc.log
 [Error - 12:39:26 AM] No config file for /root/.vscode/extensions/eamodio.gitlens-10.2.2/dist/webviews/welcome.html
 [Error - 12:40:00 AM] No config file for /var/www/socket/server/slack/index.html
+[Error - 7:41:25 AM] No config file for /usr/share/code/resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+[Error - 8:03:53 AM] No config file for /usr/share/code/resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+[Error - 8:05:46 AM] No config file for /root/.cache/typescript/4.0/node_modules/@types/socket.io/index.d.ts

@@ -1,4 +1,5 @@
 const socket = io('http://localhost:9000');
+var nsSocket = "";
 //Send message when the client establishes the connection with the server
 socket.on('connect', (data) => {
     socket.on('nsList', (namespaces) => {
@@ -25,7 +26,7 @@ socket.on('connect', (data) => {
 
 
 function joinNS(endpoint) {
-  const nsSocket =  io(`http://localhost:9000/${endpoint}`);
+  nsSocket =  io(`http://localhost:9000/${endpoint}`);
   nsSocket.on('nsRoomLoad', (nsRooms) => {
     let roomList = document.querySelector('.room-list');
     roomList.innerHTML = '';
@@ -39,15 +40,43 @@ function joinNS(endpoint) {
         console.log(event.target.innerHTML);
       })
     })
+    // On joining a namespace, join the first room automatically and load its chats
+    const topRoom = document.querySelector('.room');
+    const topRoomName = topRoom.innerText;
+    joinRoom(topRoomName)
   });
 
   nsSocket.on('messageToClients', (message) => {
     console.log(message);
-    document.querySelector('#messages').innerHTML += `<li>${message.text}</li>`;
+    document.querySelector('#messages').innerHTML += messageHTML(message);
   });
   document.querySelector('.message-form').addEventListener('submit', (event) => {
     event.preventDefault();
-    const newMessage = document.querySelector('#user-message').value;
-    nsSocket.emit('newMessageToServer', {text: newMessage});
+    const messageSelector = document.querySelector('#user-message');
+    const newMessage = messageSelector.value;
+    nsSocket.emit('newMessageToServer', newMessage);
+    messageSelector.value = '';
   })
+}
+
+function joinRoom(roomToJoin) {
+  nsSocket.emit('joinRoom', roomToJoin, (memberCount) => {
+    document.querySelector('.curr-room-num-users').innerHTML = `${memberCount} <span class="glyphicon glyphicon-user">`;
+  })
+}
+
+function messageHTML(message) {
+  const dateLocalString = new Date(message.time).toLocaleString();
+  const html = `
+  <li>
+      <div class="user-image">
+          <img src="${message.avatar}" />
+      </div>
+      <div class="user-message">
+          <div class="user-name-time">${message.username} <span>${dateLocalString}</span></div>
+          <div class="message-text">${message.text}</div>
+      </div>
+  </li>
+  `;
+  return html;
 }
