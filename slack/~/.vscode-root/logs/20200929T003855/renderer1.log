@@ -1,0 +1,47 @@
+[2020-09-29 17:55:51.037] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:55:51.045] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Unknown (UserDataSyncError) syncResource:unknown operationId:unknown: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at Function.e.toUserDataSyncError (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2856:604)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:6038:163
+[2020-09-29 17:55:51.045] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:55:51.591] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:56:12.910] [renderer1] [warning] UNRESPONSIVE extension host, 'CoenraadS.bracket-pair-colorizer' took 50% of 5332.935ms, saved PROFILE here: '/tmp/exthost-2438d4.cpuprofile' [{"id":"christian-kohler.path-intellisense","total":1230729,"percentage":23},{"id":"CoenraadS.bracket-pair-colorizer","total":2656182,"percentage":50},{"id":"dbaeumer.vscode-eslint","total":37968,"percentage":1},{"id":"eamodio.gitlens","total":59299,"percentage":1},{"id":"gc","total":11036,"percentage":0},{"id":"self","total":1337408,"percentage":25}]
+[2020-09-29 17:57:25.218] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:57:25.357] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Unknown (UserDataSyncError) syncResource:unknown operationId:unknown: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at Function.e.toUserDataSyncError (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2856:604)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:6038:163
+[2020-09-29 17:57:25.357] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:57:27.532] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:57:27.611] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:57:33.843] [renderer1] [warning] UNRESPONSIVE extension host, 'Wscats.eno' took 99% of 3869.859ms, saved PROFILE here: '/tmp/exthost-d9b844.cpuprofile' [{"id":"formulahendry.auto-rename-tag","total":1204,"percentage":0},{"id":"gc","total":7697,"percentage":0},{"id":"program","total":9559,"percentage":0},{"id":"self","total":17144,"percentage":0},{"id":"Wscats.eno","total":3833962,"percentage":99}]
+[2020-09-29 17:57:35.240] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:57:47.663] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:57:56.059] [renderer1] [error] connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock: Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 17:58:02.341] [renderer1] [warning] UNRESPONSIVE extension host, 'Angular.ng-template' took 98% of 1494.639ms, saved PROFILE here: '/tmp/exthost-9a6a3b.cpuprofile' [{"id":"Angular.ng-template","total":1463003,"percentage":98},{"id":"eamodio.gitlens","total":18789,"percentage":1},{"id":"gc","total":4431,"percentage":0},{"id":"program","total":6560,"percentage":0},{"id":"self","total":1604,"percentage":0}]
+[2020-09-29 18:02:27.613] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:07:27.613] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:12:27.637] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:17:27.638] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:22:27.639] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:27:27.641] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:32:27.642] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:37:27.645] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2020-09-29 18:42:27.647] [renderer1] [error] Error: connect ENOENT /var/www/socket/server/slack/~/.vscode-root/1.49.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)

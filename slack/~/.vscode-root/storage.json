@@ -2,6 +2,7 @@
     "telemetry.machineId": "65ec9cf43ae62cd43d6c785935021dfaad06fc54a1e64210bb1987a46c1da34b",
     "openedPathsList": {
         "workspaces3": [
+            "file:///var/www/socket/server",
             "file:///var/www/socket/server/slack"
         ],
         "files2": []
@@ -40,8 +41,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -50,7 +50,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/var/www/socket/server/slack",
+                                        "fsPath": "/var/www/socket/server",
+                                        "external": "file:///var/www/socket/server",
+                                        "path": "/var/www/socket/server",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/var/www/socket/server"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///var/www/socket/server/slack",
                                         "path": "/var/www/socket/server/slack",
                                         "scheme": "file"
@@ -154,13 +165,6 @@
                                 {
                                     "id": "workbench.action.selectIconTheme",
                                     "label": "File &&Icon Theme"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "workbench.userDataSync.actions.turnOn",
-                                    "label": "Turn on Settings Sync..."
                                 }
                             ]
                         }
@@ -1458,8 +1462,8 @@
     "themeBackground": "#1e1e1e",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///var/www/socket/server/slack",
-            "backupPath": "/var/www/socket/server/slack/~/.vscode-root/Backups/13740ed4dd1818c2a38ccff12eaff49a",
+            "folder": "file:///var/www/socket/server",
+            "backupPath": "/var/www/socket/server/slack/~/.vscode-root/Backups/af2b72c14ccb75fa18bcb7329cc9d298",
             "uiState": {
                 "mode": 0,
                 "x": 983,
@@ -1469,5 +1473,6 @@
             }
         },
         "openedWindows": []
-    }
+    },
+    "pickerWorkingDir": "/var/www/socket"
 }
