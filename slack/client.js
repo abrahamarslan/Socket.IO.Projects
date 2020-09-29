@@ -61,8 +61,20 @@ function joinNS(endpoint) {
 
 function joinRoom(roomToJoin) {
   nsSocket.emit('joinRoom', roomToJoin, (memberCount) => {
-    document.querySelector('.curr-room-num-users').innerHTML = `${memberCount} <span class="glyphicon glyphicon-user">`;
+    //document.querySelector('.curr-room-num-users').innerHTML = `${memberCount} <span class="glyphicon glyphicon-user">`;
+  });
+  nsSocket.on('roomHistory', (history) => {
+    const messagesUL = document.querySelector('#messages');
+    messagesUL.innerHTML = '';
+    history.forEach((message) => {
+      const messageLI = messageHTML(message);
+      messagesUL.innerHTML += messageLI;
+    })
   })
+  nsSocket.on('roomMembers', (roomMembers) => {
+    document.querySelector('.curr-room-num-users').innerHTML = `${roomMembers} <span class="glyphicon glyphicon-user">`;
+    document.querySelector('.curr-room-text').innerHTML = `${roomToJoin}`;
+  });
 }
 
 function messageHTML(message) {

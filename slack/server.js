@@ -26,9 +26,23 @@ namespaces.forEach((namespace) => {
         nsSocket.emit('nsRoomLoad', namespaces[0].rooms);
         nsSocket.on('joinRoom', (roomToJoin, memberCountCallbackFunc) => {
             nsSocket.join(roomToJoin);
+            // io.of('/wiki').in(roomToJoin).clients((error, clients) => {
+            //     memberCountCallbackFunc(clients.length);
+            // });
+            const nsRoom = namespaces[0].rooms.find((room) => {
+                return room.roomTitle === roomToJoin;
+            });
+            console.log('-----------------------------------------------------------------------');
+            console.log(nsRoom.history);
+            if(nsRoom) {
+                nsSocket.emit('roomHistory', nsRoom.history)
+            }
+
+            // Update the number of users in the room and send back this data
             io.of('/wiki').in(roomToJoin).clients((error, clients) => {
-                memberCountCallbackFunc(clients.length);
+                io.of('/wiki').in(roomToJoin).emit('roomMembers', clients.length);
             })
+
         });
         nsSocket.on('newMessageToServer', (message) => {            
             const data = {
@@ -44,6 +58,13 @@ namespaces.forEach((namespace) => {
             // This is because the socket always joins its own room on connection or re-connection
             // Get the keys
             const roomTitle = Object.keys(nsSocket.rooms)[1];
+            // To get the history, find the room object from the array of namespaces
+            const nsRoom = namespaces[0].rooms.find((room) => {
+                return room.roomTitle === roomTitle;
+            });
+            if(nsRoom) {
+                nsRoom.addMessage(data);
+            }
             // Now broadcast this message from client to all clients of this room
             io.of('/wiki').to(roomTitle).emit('messageToClients', data);
 

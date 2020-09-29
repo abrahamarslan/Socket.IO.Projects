@@ -158,3 +158,15 @@ Info 150  [8:5:46.728] Project '/dev/null/inferredProject1*' (Inferred)
 Info 151  [8:5:46.728] 	Files (81)
 
 Info 152  [8:5:46.728] -----------------------------------------------
+Info 153  [9:7:29.51] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 154  [9:7:29.341] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 41 structureChanged: true Elapsed: 247ms
+Info 155  [9:7:29.341] Project '/dev/null/inferredProject1*' (Inferred)
+Info 156  [9:7:29.341] 	Files (6)
+
+Info 157  [9:7:29.341] -----------------------------------------------
+Info 158  [9:7:29.673] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 159  [9:7:29.904] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 42 structureChanged: false Elapsed: 231ms
+Info 160  [9:7:29.904] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 161  [9:8:19.549] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 162  [9:8:19.556] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 43 structureChanged: false Elapsed: 6ms
+Info 163  [9:8:19.556] Different program with same set of files:: oldProgram.structureIsReused:: 2
