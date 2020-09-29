@@ -1,4 +1,9 @@
-const socket = io('http://localhost:9000');
+const username = prompt("What is your username?");
+const socket = io('http://localhost:9000', {
+  query: {
+    username
+  }
+});
 var nsSocket = "";
 //Send message when the client establishes the connection with the server
 socket.on('connect', (data) => {
@@ -81,7 +86,8 @@ function joinRoom(roomToJoin) {
     history.forEach((message) => {
       const messageLI = messageHTML(message);
       messagesUL.innerHTML += messageLI;
-    })
+    });
+    messagesUL.scrollTo(0, messagesUL.scrollHeight);
   })
   nsSocket.on('roomMembers', (roomMembers) => {
     document.querySelector('.curr-room-num-users').innerHTML = `${roomMembers} <span class="glyphicon glyphicon-user">`;

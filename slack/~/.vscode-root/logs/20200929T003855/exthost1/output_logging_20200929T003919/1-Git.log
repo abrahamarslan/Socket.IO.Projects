@@ -1094,3 +1094,55 @@ Open repository: /var/www/socket/server
 > git cat-file -s d492248e788d005d0fe5c467503770c137dccd31
 > git config --get commit.template
 > git show --textconv :slack/client.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /var/www/socket/server/slack/client.js
+> git cat-file -s d492248e788d005d0fe5c467503770c137dccd31
+> git show --textconv :slack/client.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /var/www/socket/server/slack/client.js
+> git cat-file -s d492248e788d005d0fe5c467503770c137dccd31
+> git show --textconv :slack/client.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :slack/server.js
+> git ls-files --stage -- /var/www/socket/server/slack/server.js
+> git cat-file -s 94d1412ab1f204e09b8606f129ffb494f5214d27
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :slack/client.js
+> git ls-files --stage -- /var/www/socket/server/slack/client.js
+> git cat-file -s d492248e788d005d0fe5c467503770c137dccd31
