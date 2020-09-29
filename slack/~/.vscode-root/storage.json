@@ -1462,10 +1462,10 @@
             "backupPath": "/var/www/socket/server/slack/~/.vscode-root/Backups/13740ed4dd1818c2a38ccff12eaff49a",
             "uiState": {
                 "mode": 0,
-                "x": 993,
-                "y": 57,
-                "width": 927,
-                "height": 1023
+                "x": 983,
+                "y": 47,
+                "width": 1853,
+                "height": 1025
             }
         },
         "openedWindows": []

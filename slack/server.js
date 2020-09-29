@@ -23,52 +23,62 @@ io.on('connection', (socket) => {
 namespaces.forEach((namespace) => {
     io.of(namespace.endpoint).on('connection', (nsSocket) => {
         console.log(`${nsSocket.id} has joined ${namespace.endpoint}`);
-        nsSocket.emit('nsRoomLoad', namespaces[0].rooms);
+        nsSocket.emit('nsRoomLoad', namespace.rooms);
         nsSocket.on('joinRoom', (roomToJoin, memberCountCallbackFunc) => {
+
+            //Leave the room which was previously joined
+            const roomToLeave = Object.keys(nsSocket.rooms)[1];
+            nsSocket.leave(roomToLeave);
+            getUsersInRoom(namespace, roomToLeave);
+
+            //Join the new room
             nsSocket.join(roomToJoin);
             // io.of('/wiki').in(roomToJoin).clients((error, clients) => {
             //     memberCountCallbackFunc(clients.length);
             // });
-            const nsRoom = namespaces[0].rooms.find((room) => {
+            const nsRoom = namespace.rooms.find((room) => {
                 return room.roomTitle === roomToJoin;
             });
-            console.log('-----------------------------------------------------------------------');
-            console.log(nsRoom.history);
+            //console.log('-----------------------------------------------------------------------');
+            //console.log(nsRoom.history);
             if(nsRoom) {
                 nsSocket.emit('roomHistory', nsRoom.history)
             }
 
             // Update the number of users in the room and send back this data
-            io.of('/wiki').in(roomToJoin).clients((error, clients) => {
-                io.of('/wiki').in(roomToJoin).emit('roomMembers', clients.length);
-            })
+            getUsersInRoom(namespace, roomToJoin);
 
         });
         nsSocket.on('newMessageToServer', (message) => {            
             const data = {
                 text: message,
                 time: Date.now(),
-                username: "abraham",
+                username: nsSocket.id,
                 avatar: "https://source.unsplash.com/random/30x30"
-            }            
-            console.log(message);
-            console.log(nsSocket.rooms);
+           }                      
+        
             // To find which room this socket is from and which room emitted this newMessageToServer 
             // The user will be in the 2nd room in the object list
             // This is because the socket always joins its own room on connection or re-connection
             // Get the keys
             const roomTitle = Object.keys(nsSocket.rooms)[1];
             // To get the history, find the room object from the array of namespaces
-            const nsRoom = namespaces[0].rooms.find((room) => {
+            const nsRoom = namespace.rooms.find((room) => {
                 return room.roomTitle === roomTitle;
             });
             if(nsRoom) {
                 nsRoom.addMessage(data);
             }
             // Now broadcast this message from client to all clients of this room
-            io.of('/wiki').to(roomTitle).emit('messageToClients', data);
+            io.of(namespace.endpoint).to(roomTitle).emit('messageToClients', data);
 
             
         })
     });
 });
+
+function getUsersInRoom(namespace, roomToJoin) {
+    io.of(namespace.endpoint).in(roomToJoin).clients((error, clients) => {
+        io.of(namespace.endpoint).in(roomToJoin).emit('roomMembers', clients.length);
+    })
+}

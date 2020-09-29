@@ -14,19 +14,27 @@ socket.on('connect', (data) => {
     var nameSpaceCollction = document.getElementsByClassName("namespace");
     var nameSpaceArray = Array.from(nameSpaceCollction); 
     (Array.from(nameSpaceCollction)).forEach((elm) => { 
-      elm.addEventListener('click', (event) => { 
-        console.log('clicked'); 
+      elm.addEventListener('click', (event) => {         
         const endpoint = elm.getAttribute('ns'); 
+        console.log(endpoint);
+        joinNS(endpoint);
       }); 
     });
-    joinNS('wiki');
+    //Join a default namespace
+    joinNS('/wiki');
 
   });
 });
 
 
 function joinNS(endpoint) {
-  nsSocket =  io(`http://localhost:9000/${endpoint}`);
+  if(nsSocket) {
+    //Check if there was an open socket and close it
+    nsSocket.close();
+    //Remove the event listener on the submit button or else it will send to all rooms
+    document.querySelector('#user-input').removeEventListener('submit', formSubmitCallback);
+  }
+  nsSocket =  io(`http://localhost:9000${endpoint}`);
   nsSocket.on('nsRoomLoad', (nsRooms) => {
     let roomList = document.querySelector('.room-list');
     roomList.innerHTML = '';
@@ -38,6 +46,7 @@ function joinNS(endpoint) {
     Array.from(roomNodes).forEach((room) => {
       room.addEventListener('click', (event) => {
         console.log(event.target.innerHTML);
+        joinRoom(event.target.innerText);
       })
     })
     // On joining a namespace, join the first room automatically and load its chats
@@ -50,13 +59,16 @@ function joinNS(endpoint) {
     console.log(message);
     document.querySelector('#messages').innerHTML += messageHTML(message);
   });
-  document.querySelector('.message-form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    const messageSelector = document.querySelector('#user-message');
-    const newMessage = messageSelector.value;
-    nsSocket.emit('newMessageToServer', newMessage);
-    messageSelector.value = '';
-  })
+  document.querySelector('.message-form').addEventListener('submit', formSubmitCallback)
+}
+
+
+function formSubmitCallback(event) {
+  event.preventDefault();
+  const messageSelector = document.querySelector('#user-message');
+  const newMessage = messageSelector.value;
+  nsSocket.emit('newMessageToServer', newMessage);
+  messageSelector.value = '';
 }
 
 function joinRoom(roomToJoin) {
@@ -75,12 +87,25 @@ function joinRoom(roomToJoin) {
     document.querySelector('.curr-room-num-users').innerHTML = `${roomMembers} <span class="glyphicon glyphicon-user">`;
     document.querySelector('.curr-room-text').innerHTML = `${roomToJoin}`;
   });
+  let searchBox = document.querySelector('#search-box');
+  searchBox.addEventListener('input', (event) => {
+      let messages = Array.from(document.getElementsByClassName('message-text'));
+      messages.forEach((message) => {
+          //Get parent div
+          var parent = message.closest('li');            
+          if(message.innerText.toLowerCase().indexOf(event.target.value.toLowerCase()) === -1) {            
+            parent.style.display = 'none';            
+          } else {
+            parent.style.display = 'block';
+          }
+      });
+  });
 }
 
 function messageHTML(message) {
   const dateLocalString = new Date(message.time).toLocaleString();
   const html = `
-  <li>
+  <li class="text">
       <div class="user-image">
           <img src="${message.avatar}" />
       </div>
