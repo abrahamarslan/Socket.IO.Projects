@@ -1,6 +1,6 @@
-
 let wHeight = $(window).height();
 let wWidth = $(window).width();
+
 let player = {}; // Player object
 let orbs = [];
 let players = [];

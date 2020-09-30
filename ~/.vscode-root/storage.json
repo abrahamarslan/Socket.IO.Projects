@@ -40,8 +40,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1454,5 +1453,19 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#1e1e1e"
+    "themeBackground": "#1e1e1e",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///var/www/socket/server",
+            "backupPath": "/var/www/socket/server/~/.vscode-root/Backups/af2b72c14ccb75fa18bcb7329cc9d298",
+            "uiState": {
+                "mode": 0,
+                "x": 448,
+                "y": 186,
+                "width": 1024,
+                "height": 768
+            }
+        },
+        "openedWindows": []
+    }
 }
