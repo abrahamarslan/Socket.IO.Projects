@@ -85,3 +85,135 @@
 [2020-09-29 18:57:39.800] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/css-language-features/client/dist/node/cssClientMain
 [2020-09-29 19:04:20.973] [exthost] [info] ExtensionService#_doActivateExtension vscode.image-preview {"startup":false,"extensionId":{"value":"vscode.image-preview","_lower":"vscode.image-preview"},"activationEvent":"onCustomEditor:imagePreview.previewEditor"}
 [2020-09-29 19:04:20.973] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/image-preview/dist/extension
+[2020-09-29 23:37:06.107] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2020-09-29 23:37:06.114] [exthost] [error] Error: <semantic> TypeScript Server Error (4.0.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at Object.first (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:1120:18)
+    at Object.getImportCompletionAction (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:132973:38)
+    at getCompletionEntryCodeActionsAndSourceDisplay (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115479:33)
+    at Object.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115443:30)
+    at Proxy.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:143486:35)
+    at /root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/node_modules/@vsintellicode/typescript-intellicode-plugin/lib/index.js:2:6671
+    at Object.r.getCompletionEntryDetails (/root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/node_modules/@vsintellicode/typescript-intellicode-plugin/lib/index.js:2:6797)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154350:57
+    at Object.mapDefined (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:610:30)
+    at IOSession.Session.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154348:33)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:153213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154953:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154944:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154953:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154977:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157193:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+    at Function.create (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76465)
+    at h.dispatchResponse (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70340)
+    at h.dispatchMessage (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69199)
+    at /usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:68709
+    at l.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:475)
+    at g.onLengthData (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+    at Socket.<anonymous> (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+    at Socket.emit (events.js:223:5)
+    at Socket.EventEmitter.emit (domain.js:475:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2020-09-29 23:37:27.840] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2020-09-29 23:37:27.841] [exthost] [error] Error: <semantic> TypeScript Server Error (4.0.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at Object.first (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:1120:18)
+    at Object.getImportCompletionAction (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:132973:38)
+    at getCompletionEntryCodeActionsAndSourceDisplay (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115479:33)
+    at Object.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115443:30)
+    at Proxy.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:143486:35)
+    at /root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/node_modules/@vsintellicode/typescript-intellicode-plugin/lib/index.js:2:6671
+    at Object.r.getCompletionEntryDetails (/root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/node_modules/@vsintellicode/typescript-intellicode-plugin/lib/index.js:2:6797)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154350:57
+    at Object.mapDefined (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:610:30)
+    at IOSession.Session.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154348:33)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:153213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154953:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154944:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154953:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154977:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157193:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+    at Function.create (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76465)
+    at h.dispatchResponse (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70340)
+    at h.dispatchMessage (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69199)
+    at /usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:68709
+    at l.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:475)
+    at g.onLengthData (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+    at Socket.<anonymous> (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+    at Socket.emit (events.js:223:5)
+    at Socket.EventEmitter.emit (domain.js:475:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2020-09-30 09:11:06.943] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2020-09-30 09:11:06.951] [exthost] [error] Error: <semantic> TypeScript Server Error (4.0.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at Object.first (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:1120:18)
+    at Object.getImportCompletionAction (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:132973:38)
+    at getCompletionEntryCodeActionsAndSourceDisplay (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115479:33)
+    at Object.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115443:30)
+    at Proxy.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:143486:35)
+    at /root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/node_modules/@vsintellicode/typescript-intellicode-plugin/lib/index.js:2:6671
+    at Object.r.getCompletionEntryDetails (/root/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.2.10/node_modules/@vsintellicode/typescript-intellicode-plugin/lib/index.js:2:6797)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154350:57
+    at Object.mapDefined (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:610:30)
+    at IOSession.Session.getCompletionEntryDetails (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154348:33)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:153213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154953:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154944:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154953:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:154977:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157193:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+    at Function.create (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76465)
+    at h.dispatchResponse (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70340)
+    at h.dispatchMessage (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69199)
+    at /usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:68709
+    at l.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:475)
+    at g.onLengthData (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+    at Socket.<anonymous> (/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+    at Socket.emit (events.js:223:5)
+    at Socket.EventEmitter.emit (domain.js:475:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2020-09-30 09:27:11.838] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2020-09-30 09:27:11.839] [exthost] [error] Error: DisposableStore is missing...
+    at U._convertCompletionItem (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:725:365)
+    at U.resolveCompletionItem (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:725:132)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)

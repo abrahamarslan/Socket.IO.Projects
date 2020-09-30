@@ -7,7 +7,7 @@ const socketIO = require('socket.io');
 const expressServer = app.listen(8080);
 const io = socketIO(expressServer);
 const helmet = require('helmet');
-app.use(helmet);
+app.use(helmet());
 console.log('Application initialized');
 
 // Module organization in files
