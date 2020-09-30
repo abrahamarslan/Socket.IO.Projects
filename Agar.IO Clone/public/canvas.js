@@ -1,8 +1,4 @@
 
-function init() {
-    draw();
-}
-
 /**
  * Start drawing
  */
