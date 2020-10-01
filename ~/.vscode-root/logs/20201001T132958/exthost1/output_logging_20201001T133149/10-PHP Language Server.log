@@ -1,0 +1,12 @@
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     The xdebug extension is loaded (2.9.6)
+DEBUG     Process restarting (PHPLS_ALLOW_XDEBUG=internal|2.9.6|1|*|*)
+DEBUG     Running '/usr/bin/php7.2' '-n' '-c' '/tmp/oew8Xw' '/root/.vscode/extensions/felixfbecker.php-intellisense-2.3.14/vendor/felixfbecker/language-server/bin/php-language-server.php' '--tcp=127.0.0.1:43179' '--memory-limit=4095M'
+DEBUG     Checking PHPLS_ALLOW_XDEBUG
+DEBUG     Restarted (49 ms). The xdebug extension is not loaded
+
+[Info  - 1:32:32 PM] 0 files total
+[Info  - 1:32:32 PM] Indexing project for definitions and static references
+[Info  - 1:32:32 PM] Indexing project for dynamic references
+[Info  - 1:32:32 PM] 0 Packages
+[Info  - 1:32:32 PM] All 0 PHP files parsed in 0 seconds. 170 MiB allocated.

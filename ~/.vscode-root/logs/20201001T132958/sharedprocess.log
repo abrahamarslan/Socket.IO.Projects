@@ -1,0 +1,9 @@
+[2020-10-01 13:30:15.913] [sharedprocess] [info] main {"machineId":"65ec9cf43ae62cd43d6c785935021dfaad06fc54a1e64210bb1987a46c1da34b","windowId":2}
+[2020-10-01 13:30:24.715] [sharedprocess] [info] Deleted from disk redhat.vscode-yaml /root/.vscode/extensions/redhat.vscode-yaml-0.11.0
+[2020-10-01 13:30:34.148] [sharedprocess] [info] Installing extension: wscats.eno
+[2020-10-01 13:30:55.924] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-10-01 13:31:02.406] [sharedprocess] [info] Downloaded extension: wscats.eno /var/www/socket/server/~/.vscode-root/CachedExtensionVSIXs/wscats.eno-2.3.20
+[2020-10-01 13:31:16.660] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.wscats.eno-2.3.20: wscats.eno
+[2020-10-01 13:31:16.661] [sharedprocess] [info] Renamed to /root/.vscode/extensions/wscats.eno-2.3.20
+[2020-10-01 13:31:16.662] [sharedprocess] [info] Installation completed. wscats.eno
+[2020-10-01 13:31:16.703] [sharedprocess] [info] Extensions installed successfully: wscats.eno

@@ -1,0 +1,24 @@
+[2020-10-01 13:30:42.393] [renderer1] [warning] UNRESPONSIVE extension host, 'ritwickdey.LiveServer' took 85% of 5261.116ms, saved PROFILE here: '/tmp/exthost-f4fd39.cpuprofile' [{"id":"CoenraadS.bracket-pair-colorizer","total":311209,"percentage":6},{"id":"dbaeumer.vscode-eslint","total":9517,"percentage":0},{"id":"eamodio.gitlens","total":27220,"percentage":1},{"id":"formulahendry.auto-close-tag","total":2628,"percentage":0},{"id":"formulahendry.auto-rename-tag","total":21981,"percentage":0},{"id":"gc","total":5868,"percentage":0},{"id":"ritwickdey.LiveServer","total":4470729,"percentage":85},{"id":"self","total":411689,"percentage":8}]
+[2020-10-01 13:31:39.603] [renderer1] [warning] UNRESPONSIVE extension host, 'felixfbecker.php-intellisense' took 100% of 5161.234ms, saved PROFILE here: '/tmp/exthost-b4691e.cpuprofile' [{"id":"felixfbecker.php-intellisense","total":5157275,"percentage":100},{"id":"gc","total":3676,"percentage":0}]
+[2020-10-01 13:31:58.505] [renderer1] [error] Unknown webview handle:f1425931-cf63-4705-83e3-b5860be902c3: Error: Unknown webview handle:f1425931-cf63-4705-83e3-b5860be902c3
+    at e.getWebview (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4538:235)
+    at e.$postMessage (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4537:523)
+    at p._doInvokeHandler (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4553:546)
+    at p._invokeHandler (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4553:238)
+    at p._receiveRequest (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4551:901)
+    at p._receiveOneMessage (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4550:729)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4548:836
+    at c.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:96:67)
+    at fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:452:97)
+    at t.PersistentProtocol._receiveMessage (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:457:276)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:454:243
+    at c.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:96:67)
+    at g.acceptChunk (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:449:445)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:448:796
+    at Socket.t (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:458:885)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2020-10-01 13:32:04.724] [renderer1] [warning] UNRESPONSIVE extension host, 'Angular.ng-template' took 91% of 2751.432ms, saved PROFILE here: '/tmp/exthost-d4d8b5.cpuprofile' [{"id":"Angular.ng-template","total":2513123,"percentage":91},{"id":"CoenraadS.bracket-pair-colorizer","total":2200,"percentage":0},{"id":"dbaeumer.vscode-eslint","total":657,"percentage":0},{"id":"eamodio.gitlens","total":9579,"percentage":0},{"id":"esbenp.prettier-vscode","total":1809,"percentage":0},{"id":"felixfbecker.php-intellisense","total":4108,"percentage":0},{"id":"formulahendry.auto-rename-tag","total":5820,"percentage":0},{"id":"gc","total":60049,"percentage":2},{"id":"program","total":3300,"percentage":0},{"id":"self","total":66615,"percentage":2},{"id":"vscode.git","total":81213,"percentage":3},{"id":"vscode.merge-conflict","total":361,"percentage":0},{"id":"vscode.typescript-language-features","total":1713,"percentage":0},{"id":"Wscats.eno","total":330,"percentage":0}]

@@ -638,3 +638,42 @@ Open repository: /var/www/socket/server
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/canvas.js
+> git config --get commit.template
+> git cat-file -s 99324cf9705b390967228ef4598f367bd1fcd9d0
+> git show --textconv :Agar.IO Clone/public/canvas.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/canvas.js
+> git cat-file -s 99324cf9705b390967228ef4598f367bd1fcd9d0
+> git show --textconv :Agar.IO Clone/public/canvas.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Agar.IO Clone/public/canvas.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/canvas.js
+> git cat-file -s 99324cf9705b390967228ef4598f367bd1fcd9d0
+> git show --textconv :Agar.IO Clone/public/index.html
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/index.html
+> git cat-file -s 74ea446fcf1e2524b815b5a193e8bd2091c8f612
+> git show --textconv :Agar.IO Clone/public/ui.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/ui.js
+> git cat-file -s 115e321d7c5832ff22b6881e87e6a6b14b109b16

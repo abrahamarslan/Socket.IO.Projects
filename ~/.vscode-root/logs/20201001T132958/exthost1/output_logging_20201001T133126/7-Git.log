@@ -1,0 +1,88 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /var/www/socket/server
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Agar.IO Clone/sockets/classes/PlayerData.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/classes/PlayerData.js
+> git cat-file -s 7fdd87f7a0a138a0de1a014e4042f77ae06dab40
+> git show --textconv :Agar.IO Clone/sockets/checkCollision.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/checkCollision.js
+> git cat-file -s 3ab8318f996c31a0443660dcf7cc62525f8cbcca
+> git show --textconv :Agar.IO Clone/sockets/socketMain.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/socketMain.js
+> git cat-file -s de472a782dc23a48b1e44bae4dd8e2be02f40fbf
+> git show --textconv :Agar.IO Clone/sockets/checkCollision.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/checkCollision.js
+> git cat-file -s 3ab8318f996c31a0443660dcf7cc62525f8cbcca
+> git show --textconv :Agar.IO Clone/sockets/socketMain.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/socketMain.js
+> git cat-file -s de472a782dc23a48b1e44bae4dd8e2be02f40fbf
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Agar.IO Clone/client.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/client.js
+> git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391
+> git show --textconv :Agar.IO Clone/public/socket.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/socket.js
+> git cat-file -s ca7f9e517b09d04696bcf7751b90f8c676d149e9
+> git show --textconv :Agar.IO Clone/sockets/socketMain.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/socketMain.js
+> git cat-file -s de472a782dc23a48b1e44bae4dd8e2be02f40fbf
+> git show --textconv :Agar.IO Clone/public/socket.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/socket.js
+> git cat-file -s ca7f9e517b09d04696bcf7751b90f8c676d149e9
+> git show --textconv :Agar.IO Clone/sockets/socketMain.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/socketMain.js
+> git cat-file -s de472a782dc23a48b1e44bae4dd8e2be02f40fbf
+> git show --textconv :Agar.IO Clone/public/socket.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/socket.js
+> git cat-file -s ca7f9e517b09d04696bcf7751b90f8c676d149e9
+> git show --textconv :Agar.IO Clone/public/canvas.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/public/canvas.js
+> git cat-file -s 99324cf9705b390967228ef4598f367bd1fcd9d0
+> git show --textconv :Agar.IO Clone/sockets/socketMain.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/socketMain.js
+> git cat-file -s de472a782dc23a48b1e44bae4dd8e2be02f40fbf
+> git show --textconv :Agar.IO Clone/sockets/checkCollision.js
+> git ls-files --stage -- /var/www/socket/server/Agar.IO Clone/sockets/checkCollision.js
+> git cat-file -s 3ab8318f996c31a0443660dcf7cc62525f8cbcca
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

@@ -19,8 +19,8 @@ let settings = {
     defaultSize: 6,
     // as player gets bigger, the zoom needs to go out
     defaultZoom: 1.5,
-    worldWidth: 500,
-    worldHeight: 500
+    worldWidth: 2000,
+    worldHeight: 2000
 };
 
 initGame();
